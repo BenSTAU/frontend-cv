@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+html {
+  overflow: hidden;
+}
+canvas {
+  background-color: #fff0f5;
+  z-index: -1;
+}
