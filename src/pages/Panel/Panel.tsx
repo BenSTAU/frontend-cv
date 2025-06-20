@@ -19,12 +19,14 @@ export default function Panel() {
     // Vérification de l'authentification au chargement
     useEffect(() => {
         async function fetchRole() {
-            const { role, username } = await checkAuth(navigate);
-            await setRole(role)
-            await setName(username)
+            const result = await checkAuth(navigate);
+            if (result) {
+                setRole(result.role);
+                setName(result.username);
+            }
         }
         fetchRole();
-    }, []);
+    }, [navigate]);
 
     // Gestionnaire de déconnexion
     async function handleLogout(e: React.MouseEvent<HTMLButtonElement>) {

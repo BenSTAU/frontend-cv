@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { BsArrowBarDown } from "react-icons/bs";
 
+type FormationType = {
+    _id: string;
+    title: string;
+    date: string;
+};
+
+const [formations, setFormations] = useState<FormationType[]>([]);
+
 export default function formation() {
     const [formations, setFormations] = useState([]);
     const [active, setActive] = useState(false)

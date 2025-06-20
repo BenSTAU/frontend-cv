@@ -1,6 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import About from "./About.tsx";
-import Experiences from "./client/Experiences.tsx";
+
 
 // Composant principal de présentation de la page d'accueil
 export default function Presentation() {

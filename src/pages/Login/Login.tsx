@@ -35,7 +35,7 @@ export default function login() {
   }
 
   // Gestionnaire pour le mode visiteur
-  async function handleVisitor(e: React.MouseEvent<HTMLAnchorElement>) {
+  async function handleVisitor(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     await loginUser("Visitor", "kdfsku");
   }
