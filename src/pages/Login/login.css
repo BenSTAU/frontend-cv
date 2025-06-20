@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.inputLogin {
+  @apply w-[300px] h-[40px] bg-[#fff0f5] border-[1px] border-[#2E2E2E30] p-2 text-[14px] 
+      focus:border-[#2E2E2E] focus:border-2 focus:outline-none transition-colors duration-200;
+}
+
+.buttonLogin {
+  @apply w-[270px] h-[40px] bg-[#a3b8ff1f]  border-[1px] border-[#2E2E2E30] text-[16px] shadow-md cursor-pointer;
+}
+
+.visitorLogin {
+  @apply w-[270px] h-[40px]  text-[16px] cursor-pointer text-[#374151];
+}
