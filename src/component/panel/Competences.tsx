@@ -7,7 +7,6 @@ type FormationType = {
     date: string;
 };
 
-const [formations, setFormations] = useState<FormationType[]>([]);
 
 export default function formation() {
     const [formations, setFormations] = useState([]);

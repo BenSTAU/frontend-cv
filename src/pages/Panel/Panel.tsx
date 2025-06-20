@@ -46,7 +46,7 @@ export default function Panel() {
                     className="flex justify-center items-center h-[10vh]">
                     <nav
                         className="nav">
-                        <h1>Bienvenue {name}</h1>
+                        <h1>Bienvenue {name} {role}</h1>
                         <button
                             className="buttonLogout"
                             onClick={handleLogout}
