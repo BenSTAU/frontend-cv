@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+  font-family: "Spectral";
+  src: url(./assets/font/SpectralSC-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/font/Poppins-Regular.ttf);
+}
+
+canvas {
+  background-color: #fff0f5;
+  z-index: -1;
+}
+body {
+  background-color: #fff0f5;
+  font-family: "Poppins";
+  color: #2e2e2e;
+}
+
+h1 {
+  font-family: "Spectral";
+}
+
+.cvContainer {
+  @apply w-[95%] overflow-hidden border-1 border-[#2E2E2E30] flex flex-col gap-4 relative;
+  max-height: 100px;
+  transition: max-height 1s ease;
+  overflow: hidden;
+}
+.cvContainerOpen {
+  @apply w-[95%] overflow-hidden border-1 border-[#2E2E2E30] p-5 flex flex-col gap-4 relative;
+  max-height: 500px; /* Mets une valeur assez grande pour ton contenu */
+  transition: max-height 1s ease-in-out;
+}
+.cvH1 {
+  @apply text-3xl pb-[50px];
+}
+.cvButton {
+  @apply self-center cursor-pointer absolute bottom-2;
+  transition: rotate 0.8s ease;
+}
+.cvButtonOpen {
+  @apply self-center cursor-pointer absolute bottom-2 rotate-180;
+  transition: rotate 0.8s ease;
+}

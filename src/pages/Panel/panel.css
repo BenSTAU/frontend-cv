@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.nav {
+  @apply flex justify-between w-[90vw] text-3xl;
+}
+.nav h1 {
+  @apply w-[400px] border-b-1 border-b-[#2E2E2E30] pb-4;
+}
+
+.buttonLogout {
+  @apply w-[100px] h-[40px] bg-[#ffc8a31f]  border-[1px] border-[#2E2E2E30] text-[16px] shadow-md cursor-pointer;
+}
+h2 {
+  @apply text-2xl;
+}
