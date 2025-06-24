@@ -1,11 +1,14 @@
 export default async function checkAuth(navigate) {
-  const response = await fetch("http://localhost:4444/api/checkAuth", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    credentials: "include",
-  });
+  const response = await fetch(
+    import.meta.env.VITE_URL_FRONT + "/api/checkAuth",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    }
+  );
   if (!response.ok) {
     navigate("/login");
     return null;
