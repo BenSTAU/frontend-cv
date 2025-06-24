@@ -12,17 +12,14 @@ export default function login() {
 
   // Fonction pour gérer la connexion via l'API
   async function loginUser(username, password) {
-    const response = await fetch(
-      import.meta.env.VITE_URL_FRONT + "/api/login",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        credentials: "include",
-        body: JSON.stringify({ username, password }),
-      }
-    );
+    const response = await fetch("http://localhost:4444/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+      body: JSON.stringify({ username, password }),
+    });
     const data = await response.json();
     if (response.ok) {
       navigate("/Panel");
