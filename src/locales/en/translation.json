@@ -1,0 +1,25 @@
+{
+  "login": {
+    "visitor": "Click to visit"
+  },
+  "panel": {
+    "bienvenue": "Welcome",
+    "cv": "Resume",
+    "buttonLogout": "Logout",
+    "competences": {
+      "titre": "Skills"
+    },
+    "experience": {
+      "titre": "Work experience"
+    },
+    "benevolat": {
+      "titre": "Volunteering "
+    },
+    "formation": {
+      "titre": "Education"
+    },
+    "loisir": {
+      "titre": "Hobbies"
+    }
+  }
+}

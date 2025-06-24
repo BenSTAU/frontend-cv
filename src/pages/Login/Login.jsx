@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
+import { useTranslation } from "react-i18next";
+import Langue from "../../component/Langue.jsx";
 
 export default function login() {
   // États pour gérer le formulaire et les messages
@@ -9,6 +11,7 @@ export default function login() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
 
   // Fonction pour gérer la connexion via l'API
   async function loginUser(username, password) {
@@ -45,39 +48,42 @@ export default function login() {
 
   // Interface utilisateur du formulaire de connexion
   return (
-    <section className="flex justify-center items-center h-screen w-screen bg-[#fff0f5]">
-      <article className="w-[500px] h-[650px] bg-[#a3b8ff1f] rounded-md border-[1px] border-[#2E2E2E30] shadow flex flex-col justify-center items-center text-5xl gap-15 pb-[50px]">
-        <h1>Login</h1>
-        <form
-          className="flex flex-col justify-around items-center gap-15"
-          onSubmit={handleSubmit}
-        >
-          <div className="flex flex-col justify-center gap-5">
-            <input
-              className="inputLogin"
-              type="name"
-              placeholder="username"
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <input
-              className="inputLogin "
-              type="password"
-              placeholder="password"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-          <div className="flex flex-col justify-center gap-5">
-            <button className="buttonLogin" type="submit">
-              Connexion
-            </button>
-            <button className="visitorLogin" onClick={handleVisitor}>
-              Cliquez pour visiter
-            </button>
-          </div>
-        </form>
+    <>
+      <Langue />
+      <section className="flex justify-center items-center h-screen w-screen bg-[#fff0f5]">
+        <article className="w-[500px] h-[650px] bg-[#a3b8ff1f] rounded-md border-[1px] border-[#2E2E2E30] shadow flex flex-col justify-center items-center text-5xl gap-15 pb-[50px]">
+          <h1>Login</h1>
+          <form
+            className="flex flex-col justify-around items-center gap-15"
+            onSubmit={handleSubmit}
+          >
+            <div className="flex flex-col justify-center gap-5">
+              <input
+                className="inputLogin"
+                type="name"
+                placeholder="username"
+                onChange={(e) => setUsername(e.target.value)}
+              />
+              <input
+                className="inputLogin "
+                type="password"
+                placeholder="password"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div className="flex flex-col justify-center gap-5">
+              <button className="buttonLogin" type="submit">
+                Connexion
+              </button>
+              <button className="visitorLogin" onClick={handleVisitor}>
+                {t("login.visitor")}
+              </button>
+            </div>
+          </form>
 
-        <p className="text-[18px]  min-h-[24px]">{message}</p>
-      </article>
-    </section>
+          <p className="text-[18px]  min-h-[24px]">{message}</p>
+        </article>
+      </section>
+    </>
   );
 }

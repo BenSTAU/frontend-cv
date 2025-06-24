@@ -9,7 +9,7 @@
 }
 
 .buttonLogout {
-  @apply w-[100px] h-[40px] bg-[#ffc8a31f]  border-[1px] border-[#2E2E2E30] text-[16px] shadow-md cursor-pointer;
+  @apply h-[40px] bg-[#ffc8a31f]  border-[1px] border-[#2E2E2E30] text-[16px] shadow-md cursor-pointer pl-5 pr-5;
 }
 h2 {
   @apply text-2xl;

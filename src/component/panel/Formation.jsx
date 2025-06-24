@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { BsArrowBarDown } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 export default function formation() {
   const [formations, setFormations] = useState([]);
   const [active, setActive] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const fetchFormations = async () => {
     setActive(!active);
