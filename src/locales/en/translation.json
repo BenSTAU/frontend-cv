@@ -10,16 +10,30 @@
       "titre": "Skills"
     },
     "experience": {
-      "titre": "Work experience"
+      "titre": "Work experience",
+      "experienceTitre": "Experience Title",
+      "experienceDate": "Date",
+      "experienceLieu": "Location",
+      "experienceExplanation": "Explanation"
     },
     "benevolat": {
       "titre": "Volunteering "
     },
     "formation": {
-      "titre": "Education"
+      "titre": "Education",
+      "formationTitre": "Education Title",
+      "formationDate": "Date",
+      "formationLieu": "Location",
+      "formationOption": "Major/Option"
     },
     "loisir": {
       "titre": "Hobbies"
+    },
+    "toastCrud": {
+      "create": "Created successfully",
+      "update": "Updated successfully",
+      "delete": "Deleted successfully",
+      "error": "An error occurred"
     }
   }
 }

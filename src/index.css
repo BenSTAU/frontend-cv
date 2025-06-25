@@ -28,11 +28,10 @@ h1 {
   @apply w-[95%] overflow-hidden border-1 border-[#2E2E2E30] flex flex-col gap-4 relative;
   max-height: 80px;
   transition: max-height 1s ease;
-  overflow: hidden;
 }
 .cvContainerOpen {
-  @apply w-[95%] overflow-hidden border-1 border-[#2E2E2E30] p-5 flex flex-col gap-4 relative;
-  max-height: 500px; /* Mets une valeur assez grande pour ton contenu */
+  @apply w-[95%] overflow-hidden border-1 border-[#2E2E2E30] p-5 flex flex-col gap-10 relative;
+  max-height: 900px; /* Mets une valeur assez grande pour ton contenu */
   transition: max-height 1s ease-in-out;
 }
 .cvH1 {

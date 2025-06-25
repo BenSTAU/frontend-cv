@@ -10,16 +10,30 @@
       "titre": "Compétences"
     },
     "formation": {
-      "titre": "Formation"
+      "titre": "Formation",
+      "formationTitre": "Titre de la formation",
+      "formationDate": "Date",
+      "formationLieu": "Lieu",
+      "formationOption": "Option"
     },
     "benevolat": {
       "titre": "Bénévolat"
     },
     "experience": {
-      "titre": "Expérience"
+      "titre": "Expérience",
+      "experienceTitre": "Titre",
+      "experienceDate": "Date",
+      "experienceLieu": "Lieu",
+      "experienceExplanation": "Explication"
     },
     "loisir": {
       "titre": "Loisirs"
+    },
+    "toastCrud": {
+      "create": "Créé avec succès",
+      "update": "Mis à jour avec succès",
+      "delete": "Supprimé avec succès",
+      "error": "Une erreur s'est produite"
     }
   }
 }
