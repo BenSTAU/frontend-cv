@@ -6,8 +6,13 @@
     "bienvenue": "Welcome",
     "cv": "Resume",
     "buttonLogout": "Logout",
-    "competences": {
-      "titre": "Skills"
+    "competence": {
+      "titre": "Skills",
+      "name": "Name",
+      "master": "Master",
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
     },
     "experience": {
       "titre": "Work experience",

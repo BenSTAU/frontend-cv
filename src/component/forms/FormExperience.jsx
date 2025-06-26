@@ -39,7 +39,7 @@ export default function Form({
       <div className="flex flex-col">
         <label htmlFor="">{t("panel.experience.experienceExplanation")}</label>
         <input
-          className="inputPanel"
+          className="inputPanel w-[500px]  h-[75%]"
           value={explanation}
           onChange={explanationChange}
         />
